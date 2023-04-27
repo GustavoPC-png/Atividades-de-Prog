@@ -1,26 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penis</title>
+	<title>Exemplo de entrada de texto</title>
 </head>
 <body>
-    <div class="conteiner">
-        <h1>Contador</h1>
-        <div class="numeros">
-            <h1 id="x">0</h1>
-        </div>
-        <div class="botoes">
-            <div class="bttn">
-                <button id="bttn1" class="bt">Adicao</button>
-                <button id="bttn2" class="bt">Reset</button>
-                <button id="bttn3" class="bt">subtracao</button>
-            </div>
-        </div>
-
-        <script src="script.js"></script>
-    </div>
+	<label for="texto">Digite seu texto:</label>
+	<textarea id="texto" name="texto"></textarea>
+	<button onclick="exibirTexto()">Enviar</button>
+	<div id="resultado"></div>
+	<script src="script.js"></script>
 </body>
 </html>

@@ -1,11 +1,17 @@
-let pizza = document.querySelector('#pizzaN');
-
-let p = document.querySelector('#t-small');
-let m = document.querySelector('#t-med');
-let g = document.querySelect('#t-big');
-
-let pedido = document.querySelector('.pedido');
-
-pizza.addEventListener('keyup', function(){
-    pedido.innerHTML = `${e.target.value}`
-});
+function adicionarItem() {
+    var item = document.getElementById("item").value;
+    var lista = document.getElementById("lista");
+    var novoItem = document.createElement("li");
+    novoItem.appendChild(document.createTextNode(item));
+    
+    // Criar botão de excluir para o novo item
+    var botaoExcluir = document.createElement("button");
+    botaoExcluir.innerHTML = "Excluir";
+    botaoExcluir.onclick = function() {
+      lista.removeChild(novoItem);
+    };
+    novoItem.appendChild(botaoExcluir);
+    
+    lista.appendChild(novoItem);
+    document.getElementById("item").value = "";
+  }
