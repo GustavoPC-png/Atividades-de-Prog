@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panquecaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div class="box">
+            <h1>Preço do Pedido</h1>
+            <h4>Tamanho da panqueca: </h4>
+            <input type="radio" name="tamanho" id="p">
+            <label for="p">P</label>
+            <input type="radio" name="tamanho" id="m">
+            <label for="m">M</label>
+            <input type="radio" name="tamanho" id="g">
+            <label for="g">G</label>
+            <h4>Sabor da panqueca:</h4>
+            <input type="checkbox" name="sabor" id="q">
+            <label for="q">Queijo</label>
+            <input type="checkbox" name="sabor" id="c">
+            <label for="c">Calabresa</label>
+            <input type="checkbox" name="sabor" id="ms">
+            <label for="m">Morango</label>
+            <h4 class="en">Entrega ou busca?</h4>
+            <select name="select" id="sl">
+                <option value="">Selecione</option>
+                <option value="e">Entrega</option>
+                <option value="b">Busca</option>
+            </select>
+            <label for="">Quantidade: </label>
+            <input type="number" name="num" id="num" value="1">
+            <Button id="bttn">Calcular</Button>
+            <p id="valor">R$ valor total</p>
+        </div>
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>
